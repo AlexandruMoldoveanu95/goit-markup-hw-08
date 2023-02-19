@@ -10,14 +10,13 @@
   transition: opacity 300ms linear, transform 250ms linear;
   padding: 93px 15px;
 }
-
 .modal__inner {
-  width: 450px;
-  height: 609px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
   background-color: #ffff;
   position: relative;
 }
-
 .close-modal {
   border-radius: 50%;
   background-color: #ffff;
@@ -33,7 +32,6 @@
   top: 8px;
   right: 8px;
 }
-
 .is-hidden {
   visibility: hidden;
   pointer-events: none;
@@ -45,7 +43,6 @@
     fill: var(--brand-color);
   }
 }
-
 .modal__title {
   font-family: "Roboto";
   font-style: normal;
@@ -73,11 +70,10 @@
   justify-content: center;
   gap: 10px;
   padding-left: 40px;
-
+  padding-right: 40px;
   label {
     position: relative;
     width: 100%;
-
     svg {
       position: absolute;
       left: 3%;
@@ -92,27 +88,23 @@
     }
   }
 }
-
 input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
-  width: 370px;
-
+  width: 100%;
   &:hover,
   :focus {
     border: 1px solid var(--brand-color);
   }
 }
-
 .request {
   width: 100%;
 }
-
 input {
   flex-wrap: wrap;
   justify-content: center;
-  width: 370px;
+  width: 100%;
   height: 40px;
   margin-top: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -121,7 +113,7 @@ input {
 textarea {
   flex-wrap: wrap;
   justify-content: center;
-  width: 370px;
+  width: 100%;
   height: 120px;
   margin-top: 4px;
   resize: none;
@@ -138,7 +130,6 @@ textarea {
     border: 1px solid var(--brand-color);
   }
 }
-
 .request__icon {
   position: absolute;
   margin-left: 12px;
@@ -162,7 +153,6 @@ textarea {
   border-radius: 2px;
   position: relative;
 }
-
 input[type="checkbox"] {
   display: none;
   &:checked + .checkbox__replace {
@@ -170,7 +160,6 @@ input[type="checkbox"] {
     background-color: var(--brand-color);
   }
 }
-
 .check-icon {
   position: absolute;
   width: 14px;
@@ -201,19 +190,30 @@ input[type="checkbox"] {
   padding-left: 7px;
   padding-bottom: 2px;
 }
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 208px 159px;
+  }
+  .modal__inner {
+    width: 80%;
+  }
+}
 @media screen and (min-width: 1200px) {
-  .inner-modal {
-    width: 528px;
-    height: 581px;
+  .modal__inner {
+    width: 50%;
+  }
+  .request-form {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   input {
-    width: 448px;
+    width: 100%;
   }
   textarea {
-    width: 448px;
+    width: 100%;
   }
   .checkbox {
-    max-width: 448px;
+    max-width: 100%;
   }
   .modal-title {
     padding-top: 40px;

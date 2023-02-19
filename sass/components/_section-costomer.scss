@@ -71,6 +71,7 @@
     .costumer__container {
       .customer {
         flex-wrap: nowrap;
+        padding: 93px 225px;
         &__item {
           @include setWidth(4);
         }

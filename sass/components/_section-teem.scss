@@ -103,6 +103,7 @@
   .team__list {
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 93px 225px;
   }
   .team__title-list {
     @include setWidth(4);
