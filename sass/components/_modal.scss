@@ -12,11 +12,10 @@
 }
 
 .modal__inner {
-  width: 100%;
-  height: auto;
+  width: 450px;
+  height: 609px;
   background-color: #ffff;
   position: relative;
-  padding: 0px 40px;
 }
 
 .close-modal {
@@ -57,6 +56,8 @@
   letter-spacing: 0.03em;
   margin-top: 40px;
   margin-bottom: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .request-form {
   font-family: "Roboto";
@@ -71,6 +72,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  padding-left: 40px;
 
   label {
     position: relative;
@@ -95,7 +97,7 @@ input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
-  width: 100%;
+  width: 370px;
 
   &:hover,
   :focus {
@@ -110,7 +112,7 @@ input {
 input {
   flex-wrap: wrap;
   justify-content: center;
-  width: 448px;
+  width: 370px;
   height: 40px;
   margin-top: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -119,7 +121,7 @@ input {
 textarea {
   flex-wrap: wrap;
   justify-content: center;
-  width: 448px;
+  width: 370px;
   height: 120px;
   margin-top: 4px;
   resize: none;
@@ -143,6 +145,11 @@ textarea {
 }
 .request {
   position: relative;
+}
+.checkbox {
+  width: 450px;
+  display: flex;
+  justify-content: center;
 }
 .checkbox__replace {
   display: inline-flex;
@@ -193,4 +200,23 @@ input[type="checkbox"] {
   color: var(--text-color);
   padding-left: 7px;
   padding-bottom: 2px;
+}
+@media screen and (min-width: 1200px) {
+  .inner-modal {
+    width: 528px;
+    height: 581px;
+  }
+  input {
+    width: 448px;
+  }
+  textarea {
+    width: 448px;
+  }
+  .checkbox {
+    max-width: 448px;
+  }
+  .modal-title {
+    padding-top: 40px;
+    padding-bottom: 1px;
+  }
 }
