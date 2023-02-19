@@ -1,5 +1,5 @@
 .hero__section {
-  background-image: url(../);
+  background-image: url(../images/background/hero770.png);
   background-size: cover;
   background-position: center;
   padding: 118px 60px;
@@ -41,11 +41,11 @@
 }
 @media screen and (min-width: 768px) {
   .hero__section {
-    background-image: url(../../images/background/hero1200w.png);
+    background-image: url(../images/background/hero1200w.png);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__section {
-    background-image: url(../../images/background/hero1600.png);
+    background-image: url(../images/background/hero1600.png);
   }
 }
